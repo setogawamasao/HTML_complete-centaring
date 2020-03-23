@@ -1,0 +1,95 @@
+/* 左右 */
+/* インライン */
+.centering_parent_1-1 {
+  text-align: center; /* ☆中央寄せ */
+  background-color: #ddd;
+}
+
+.centering_item_1-1 {
+  background-color: #ffeb3b;
+}
+
+/* ブロック */
+.centering_parent_1-2 {
+  background-color: #ddd;
+}
+
+.centering_item_1-2 {
+  background-color: #03a9f4;
+  width: 150px;
+  margin: 0 auto; /* ☆中央寄せ */
+}
+
+/* 上下 */
+/* インライン */
+.centering_parent_2-1 {
+  padding: 20px; /* 協調のため */
+  background-color: #ddd;
+}
+
+.font_big_2-1 {
+  font-size: 40px;
+}
+
+.centering_item_2-1 {
+  background-color: #ffeb3b;
+  width: 150px;
+  vertical-align: middle; /* ☆中央寄せ */
+}
+
+/* ブロック */
+.centering_parent_2-2 {
+  padding: 20px;
+  background-color: #ddd;
+  display: table-cell; /* テーブルセルにする */
+  vertical-align: middle; /* 中央寄せ */
+  height: 300px;
+  width: 640px;
+}
+
+.centering_item_2-2 {
+  background-color: #2196f3;
+  width: 150px; /* 幅指定 */
+  height: 120px;
+}
+
+/* 上下左右 */
+.centering_parent_3-1 {
+  padding: 20px;
+  background-color: #ddd;
+  height: 300px;
+  width: 640px;
+  position: relative; /* 位置指定の基準点にする */
+}
+
+.centering_item_3-1 {
+  background-color: #2196f3;
+  position: absolute;
+  top: 0; /* 位置指定 */
+  bottom: 0; /* 位置指定 */
+  left: 0; /* 位置指定 */
+  right: 0; /* 位置指定 */
+  margin: auto; /* 中央寄せ */
+  width: 150px;
+  height: 120px;
+}
+
+/* transform */
+
+.centering_parent_3-2 {
+  padding: 20px;
+  background-color: #ddd;
+  height: 300px;
+  width: 640px;
+  position: relative; /* 位置指定の基準点にする */
+}
+
+.centering_item_3-2 {
+  background-color: #2196f3;
+  position: absolute; /* 位置指定 */
+  top: 50%; /* 親要素の半分下にずらす */
+  left: 50%; /* 親要素の半分右にずらす */
+  transform: translateY(-50%) translateX(-50%); /* 要素自体の半分、上と左にずらす */
+  width: 150px;
+  height: 120px;
+}
